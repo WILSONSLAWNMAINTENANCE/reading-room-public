@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wilson's Lawn Maintenance · Reading Room</title>
+<meta name="description" content="What Wilson's Lawn Maintenance has chosen to share: its welcome, how to read, and the procedures it keeps. Members read everything in the private room.">
+<meta name="color-scheme" content="light dark">
+<style>
+  :root { --bg:#f7fbf0; --card:#ffffff; --ink:#1a2e0a; --soft:#4d6b2a; --line:#d9ecb8; --accent:#4d7c0f; --hot:#65a30d; --tint:#ecfccb; }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) { --bg:#0b0f08; --card:#151b11; --ink:#ecf1e6; --soft:#a9b89c; --line:#2b352a; --accent:#a3e635; --hot:#84cc16; --tint:#1c2614; }
+  }
+  :root[data-theme="dark"] { --bg:#0b0f08; --card:#151b11; --ink:#ecf1e6; --soft:#a9b89c; --line:#2b352a; --accent:#a3e635; --hot:#84cc16; --tint:#1c2614; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink); font: 17px/1.55 "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  main { max-width: 860px; margin: 0 auto; padding: 0 16px 48px; }
+  .banner { display:block; width:100%; height:auto; border-radius: 0 0 14px 14px; }
+  h1 { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-weight: 800; letter-spacing: .01em; font-size: clamp(1.7rem, 5vw, 2.4rem); margin: 28px 0 4px; }
+  .lede { color: var(--soft); margin: 0 0 22px; }
+  .stripe { height: 6px; width: min(420px, 70%); border-radius: 3px; background: linear-gradient(90deg,#365314,#4d7c0f,#65a30d,#a3e635); margin: 0 0 22px; }
+  h2 { font-size: 1.15rem; margin: 30px 0 10px; display:flex; align-items:center; gap:.45em; }
+  .grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; }
+  .card h3 { margin: 0 0 4px; font-size: 1rem; display:flex; align-items:center; gap:.45em; }
+  .card p { margin: 0; color: var(--soft); font-size: .95rem; }
+  .door { border-left: 5px solid var(--hot); background: var(--tint); }
+  a { color: var(--accent); text-underline-offset: 2px; overflow-wrap: anywhere; }
+  a:focus-visible { outline: 3px solid var(--hot); outline-offset: 2px; border-radius: 4px; }
+  .i { width: 1.15em; height: 1.15em; flex: none; color: var(--hot); vertical-align: -.2em; }
+  ul.files { list-style: none; padding: 0; margin: 0; display:grid; gap: 8px; }
+  ul.files li { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 10px 14px; display:flex; flex-wrap: wrap; gap: .3em .8em; align-items: baseline; }
+  ul.files .t { font-weight: 600; flex: 1 1 260px; }
+  .muted { color: var(--soft); font-size: .92rem; }
+  footer { margin-top: 40px; color: var(--soft); font-size: .85rem; border-top: 1px solid var(--line); padding-top: 14px; }
+  @media (prefers-reduced-motion: no-preference) { .card, ul.files li { transition: transform .15s ease; } .card:hover, ul.files li:hover { transform: translateY(-2px); } }
+</style>
+</head>
+<body>
+<img class="banner" src="banner/banner.svg" alt="Wilson's Lawn Maintenance on GitHub: the reading room, for visitors">
+<main>
+  <h1>The reading room, for visitors</h1>
+  <p class="lede">What Wilson's Lawn Maintenance has chosen to share: a welcome, how its pages are read, and the procedures it keeps. Everything else is read in the private room.</p>
+  <div class="stripe" aria-hidden="true"></div>
+
+  <div class="grid">
+    <div class="card door">
+      <h3><svg class="i" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"> <path d="M13 4h3a2 2 0 0 1 2 2v14" /> <path d="M2 20h3" /> <path d="M13 20h9" /> <path d="M10 12v.01" /> <path d="M13 4.562v16.157a1 1 0 0 1-1.242.97L5 20V5.562a2 2 0 0 1 1.515-1.94l4-1A2 2 0 0 1 13 4.561Z" /> </svg>  Members: the reading room</h3>
+      <p>The business's owners and the readers they name read everything at <a href="https://github.com/WILSONSLAWNMAINTENANCE/reading-room">github.com/WILSONSLAWNMAINTENANCE/reading-room</a>. Signed out, or not yet invited, that link shows a 404: it means "not yet", not "broken".</p>
+    </div>
+    <div class="card">
+      <h3><svg class="i" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"> <path d="M2 3h20" /> <path d="M21 3v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V3" /> <path d="m7 21 5-5 5 5" /> </svg>  The welcome decks</h3>
+      <p>Opening your gift, and the business's home on GitHub in seven short stops. <a href="https://github.com/WILSONSLAWNMAINTENANCE/.github/blob/main/decks/opening-your-gift.marp.pdf">the gift (PDF)</a> · <a href="https://github.com/WILSONSLAWNMAINTENANCE/.github/blob/main/decks/welcome.marp.pdf">welcome (PDF)</a></p>
+    </div>
+    <div class="card">
+      <h3><svg class="i" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"> <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" /> <circle cx="9" cy="7" r="4" /> <line x1="19" x2="19" y1="8" y2="14" /> <line x1="22" x2="16" y1="11" y2="11" /> </svg>  New to GitHub?</h3>
+      <p>Your first hour, step by step, in SOP-COM-001: your own account and password, the invitation, five words, a helper. Listed below once it has arrived.</p>
+    </div>
+    <div class="card">
+      <h3><svg class="i" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"> <path d="M7 20h10" /> <path d="M10 20c5.5-2.5.8-6.4 3-10" /> <path d="M9.5 9.4c1.1.8 1.8 2.2 2.3 3.7-2 .4-3.5.4-4.8-.3-1.2-.6-2.3-1.9-3-4.2 2.8-.5 4.4 0 5.5.8z" /> <path d="M14.1 6a7 7 0 0 0-1.1 4c1.9-.1 3.3-.6 4.3-1.4 1-1 1.6-2.3 1.7-4.6-2.7.1-4 1-4.9 2z" /> </svg>  The business</h3>
+      <p>Lawn care in Glen Rock, PA and York County. Find it where it already lives: <a href="https://www.facebook.com/WilsonslawnmaintenancePA/">Wilson's Lawn Maintenance on Facebook</a>.</p>
+    </div>
+  </div>
+
+  <h2><svg class="i" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"> <path d="M12 7v14" /> <path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z" /> </svg>  Shared here</h2>
+  <div id="shared"><p class="muted">Nothing has been shared yet. Pages arrive here only when the business's owners list them, after a check that reads every file.</p></div>
+  <noscript><p class="muted">The list of shared pages is in <a href="room-manifest.json">room-manifest.json</a> once anything has been shared.</p></noscript>
+
+  <h2><svg class="i" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"> <path d="M2.586 17.414A2 2 0 0 0 2 18.828V21a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h1a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h.172a2 2 0 0 0 1.414-.586l.814-.814a6.5 6.5 0 1 0-4-4z" /> <circle cx="16.5" cy="7.5" r=".5" fill="currentColor" /> </svg>  Asking for access</h2>
+  <p>Access is the business's to give. If you work with Wilson's Lawn Maintenance, ask Christopher, who keeps these pages, and give your GitHub username when asked. Never send a password, a code or a key: nobody here will ever ask for one.</p>
+
+  <h2><svg class="i" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"> <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" /> <path d="m9 12 2 2 4-4" /> </svg>  How a page gets here</h2>
+  <p class="muted">Every page starts in the private room. An owner lists it; a machine copies only the listed pages, after a tripwire that reads every file, including the words inside each PDF. Nobody edits this site by hand. The rule: a public page is never one that a machine or a person has not read.</p>
+
+  <footer>
+    Wilson's Lawn Maintenance on GitHub · <a href="https://github.com/WILSONSLAWNMAINTENANCE">profile</a> · <a href="https://github.com/WILSONSLAWNMAINTENANCE/reading-room-public">this site's source</a><br>
+    Code MIT, words CC BY-SA 4.0; the business's name and marks belong to the business. Icons: Lucide (ISC). Kept by the drasticstatic lab, a brother's gift.
+  </footer>
+</main>
+<script>
+(function () {
+  var box = document.getElementById('shared');
+  var SRC = 'https://github.com/WILSONSLAWNMAINTENANCE/reading-room-public/blob/main/';
+  function title(path) {
+    var b = path.split('/').pop().replace(/\.(md|pdf)$/, '');
+    if (b === 'README') b = path.split('/').slice(-2, -1)[0] || 'index';
+    var m = b.match(/^(SOP-[A-Z]+-\d{3})-(.*)$/);
+    var words = function (s) { s = s.replace(/-/g, ' ').replace(/github/gi, 'GitHub').replace(/vpn dns/i, 'VPN and DNS'); return s.charAt(0).toUpperCase() + s.slice(1); };
+    var named = { 'procedures/README.md': 'All procedures, one index', 'procedures/LEGEND.md': 'Legend: how each repository is guarded', 'decks/README.md': 'Decks: where the slides live', '000-start-here/README.md': 'The reading room: start here' };
+    if (named[path]) return named[path];
+    if (m) return m[1] + ' · ' + words(m[2]);
+    var n = b.match(/^(\d{3})-(.*)$/);
+    if (n) return n[1] + ' · ' + words(n[2]);
+    return words(b);
+  }
+  function kind(path) {
+    if (path.indexOf('proposals/') === 0 || path.indexOf('000-start-here/') === 0) return 'Start here';
+    if (path.indexOf('procedures/') === 0) return 'Procedures';
+    if (path.indexOf('decks/') === 0) return 'Decks';
+    return 'Other';
+  }
+  fetch('room-manifest.json', { cache: 'no-store' }).then(function (r) {
+    if (!r.ok) throw new Error(r.status);
+    return r.json();
+  }).then(function (m) {
+    var files = (m.files || []).filter(function (f) { return /\.(md|pdf)$/.test(f) && !/(^|\/)assets\//.test(f); });
+    if (!files.length) return;
+    var pages = {};
+    files.forEach(function (f) {
+      var key = f.replace(/^procedures\/pdf\//, 'procedures/').replace(/^proposals\/pdf\/(.*)\.pdf$/, 'proposals/$1/README.md').replace(/\.pdf$/, '.md');
+      pages[key] = pages[key] || { md: null, pdf: null };
+      if (/\.pdf$/.test(f)) pages[key].pdf = f; else pages[key].md = f;
+    });
+    var groups = {};
+    var order = function (k) { return (/README[.]md$|LEGEND[.]md$/.test(k) && k.indexOf('proposals/') !== 0 ? '0' : '1') + k; };
+    Object.keys(pages).sort(function (a, b) { return order(a) < order(b) ? -1 : 1; }).forEach(function (k) { (groups[kind(k)] = groups[kind(k)] || []).push(k); });
+    box.innerHTML = '';
+    ['Start here', 'Procedures', 'Decks', 'Other'].forEach(function (g) {
+      if (!groups[g]) return;
+      var h = document.createElement('h3'); h.textContent = g; h.style.margin = '18px 0 8px'; box.appendChild(h);
+      var ul = document.createElement('ul'); ul.className = 'files';
+      groups[g].forEach(function (k) {
+        var p = pages[k], li = document.createElement('li');
+        var t = document.createElement('span'); t.className = 't'; t.textContent = title(k); li.appendChild(t);
+        if (p.md) { var a = document.createElement('a'); a.href = SRC + p.md; a.textContent = 'page'; li.appendChild(a); }
+        if (p.pdf) { var b = document.createElement('a'); b.href = p.pdf; b.textContent = 'PDF'; li.appendChild(b); }
+        ul.appendChild(li);
+      });
+      box.appendChild(ul);
+    });
+    if (m.generated) { var s = document.createElement('p'); s.className = 'muted'; s.textContent = 'Last copied ' + m.generated + '.'; box.appendChild(s); }
+  }).catch(function () { /* nothing shared yet: keep the message */ });
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="260" viewBox="0 0 1200 260" role="img" aria-labelledby="t d">
+  <title id="t">the reading room, for visitors</title>
+  <desc id="d">What the business has chosen to share. The picture: 10 stars arrive and join into one constellation. With reduced motion, the finished picture shows at once.</desc>
+  <style>
+    /* Motion only for readers who have not asked for less. Outside this block everything is in its finished state. */
+    @media (prefers-reduced-motion: no-preference) {
+      .draw { stroke-dasharray: 100; animation: draw 2.6s cubic-bezier(.4,0,.2,1) both; }
+      .arrive { animation: arrive .5s ease-out both; }
+      .breathe { transform-box: fill-box; transform-origin: center; animation: breathe 8s steps(48) 3s infinite; }
+      .halo { transform-box: fill-box; transform-origin: center; animation: halo 5s steps(60) 3.6s infinite; }
+    }
+    @keyframes draw { from { stroke-dashoffset: 100 } to { stroke-dashoffset: 0 } }
+    @keyframes arrive { from { opacity: 0 } to { opacity: 1 } }
+    @keyframes breathe { 0%, 100% { transform: scale(1) } 50% { transform: scale(1.07) } }
+    @keyframes halo { 0% { opacity: .55; transform: scale(1) } 70%, 100% { opacity: 0; transform: scale(2.1) } }
+    .halo { opacity: 0 }
+  </style>
+  <defs>
+    <linearGradient id="ground" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1b2918"/><stop offset="1" stop-color="#101919"/></linearGradient>
+    <linearGradient id="line" gradientUnits="userSpaceOnUse" x1="668" y1="0" x2="1160" y2="0"><stop offset="0.00" stop-color="#4d7c0f"/><stop offset="0.50" stop-color="#65a30d"/><stop offset="1.00" stop-color="#afd476"/></linearGradient>
+    <linearGradient id="fade" gradientUnits="userSpaceOnUse" x1="620" y1="0" x2="1200" y2="0"><stop offset="0" stop-color="#65a30d" stop-opacity="0"/><stop offset=".35" stop-color="#65a30d"/><stop offset="1" stop-color="#afd476"/></linearGradient>
+    <clipPath id="card"><rect width="1200" height="260" rx="18"/></clipPath>
+  </defs>
+  <g clip-path="url(#card)">
+    <!-- an opaque ground: the same picture on GitHub's light and dark themes -->
+    <rect width="1200" height="260" fill="url(#ground)"/>
+    <circle class="halo" cx="770.9" cy="69.8" r="13" fill="none" stroke="#afd476" stroke-width="2"/>
+    <path class="draw" pathLength="100" d="M770.9 69.8L717.7 141.7" fill="none" stroke="#3c6013" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="animation-delay:0.30s"/>
+    <path class="draw" pathLength="100" d="M717.7 141.7L749.3 202.0" fill="none" stroke="#3c6013" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="animation-delay:0.52s"/>
+    <path class="draw" pathLength="100" d="M749.3 202.0L841.0 191.4" fill="none" stroke="#3c6013" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="animation-delay:0.74s"/>
+    <path class="draw" pathLength="100" d="M841.0 191.4L855.9 108.9" fill="none" stroke="#3c6013" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="animation-delay:0.96s"/>
+    <path class="draw" pathLength="100" d="M841.0 191.4L937.8 195.6" fill="none" stroke="#3c6013" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="animation-delay:1.18s"/>
+    <path class="draw" pathLength="100" d="M937.8 195.6L1025.9 206.0" fill="none" stroke="#3c6013" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="animation-delay:1.40s"/>
+    <path class="draw" pathLength="100" d="M1025.9 206.0L1009.6 136.7" fill="none" stroke="#3c6013" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="animation-delay:1.62s"/>
+    <path class="draw" pathLength="100" d="M1009.6 136.7L1103.8 149.8" fill="none" stroke="#3c6013" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="animation-delay:1.84s"/>
+    <path class="draw" pathLength="100" d="M1103.8 149.8L1124.0 44.8" fill="none" stroke="#3c6013" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="animation-delay:2.06s"/>
+    <circle class="arrive" style="animation-delay:0.15s" cx="770.9" cy="69.8" r="8.0" fill="#65a30d"/>
+    <circle class="arrive" style="animation-delay:0.39s" cx="749.3" cy="202.0" r="5.0" fill="#afd476"/>
+    <circle class="arrive" style="animation-delay:0.63s" cx="1009.6" cy="136.7" r="5.3" fill="#afd476"/>
+    <circle class="arrive" style="animation-delay:0.87s" cx="1103.8" cy="149.8" r="4.3" fill="#afd476"/>
+    <circle class="arrive" style="animation-delay:1.11s" cx="855.9" cy="108.9" r="5.5" fill="#afd476"/>
+    <circle class="arrive" style="animation-delay:1.35s" cx="1025.9" cy="206.0" r="3.8" fill="#afd476"/>
+    <circle class="arrive" style="animation-delay:1.59s" cx="717.7" cy="141.7" r="4.1" fill="#afd476"/>
+    <circle class="arrive" style="animation-delay:1.83s" cx="937.8" cy="195.6" r="6.0" fill="#afd476"/>
+    <circle class="arrive" style="animation-delay:2.07s" cx="841.0" cy="191.4" r="5.4" fill="#afd476"/>
+    <circle class="arrive" style="animation-delay:2.31s" cx="1124.0" cy="44.8" r="5.6" fill="#afd476"/>
+    <rect x="0.0" y="248" width="300.5" height="12" fill="#365314"/><rect x="300.0" y="248" width="300.5" height="12" fill="#4d7c0f"/><rect x="600.0" y="248" width="300.5" height="12" fill="#65a30d"/><rect x="900.0" y="248" width="300.5" height="12" fill="#ecfccb"/>
+    <g font-family="Helvetica Neue, Helvetica, Arial, sans-serif"><text x="56" y="83.2" fill="#65a30d" font-size="15" font-weight="700" letter-spacing=".6">Wilson's Lawn Maintenance</text><text x="56" y="129.6" fill="#ecfccb" font-size="40" font-weight="700" letter-spacing="-.5">the reading room, for visitors</text><text x="56" y="170.2" fill="#cfdeb2" font-size="23">What the business has chosen to share.</text></g>
+  </g>
+</svg>
